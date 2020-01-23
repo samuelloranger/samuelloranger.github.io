@@ -1,0 +1,277 @@
+/*
+* @author Samuel Loranger
+*/
+
+/* Police */
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap');
+
+h1, h2, h3{
+    font-family: 'Bebas Neue', cursive;
+    margin: 5px 0;
+}
+
+html, body, p, input, label, a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+@media print{
+    html, body, p, input, label, a{
+        font-size: 14px;
+    }
+}
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 55px
+}
+
+a{
+    color: #A31621;
+    text-decoration: none;
+}
+
+p, a{
+    margin: 5px 0;
+}
+
+h1{
+    font-size: 75px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 22px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 15px;
+    margin: 0;
+}
+
+ul>li{
+    display: flex;
+    align-items: center;
+}
+
+ul>li:before{
+    content: "";
+    display: inline-block;
+    border-radius: 35px;
+    width: 8px;
+    height: 8px;
+    background-color: #A31621;
+    margin-right: 5px;
+}
+
+@media print{
+    h1{
+        font-size: 45px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 19px;
+        margin-bottom: 4px;
+    }
+}
+
+/* Bouton imprimer */
+.btnImprimer{
+    border: 0;
+    background-color: none;
+    padding: 0;
+    color: #A31621;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 35px;
+    transition: 0.25s ease-in-out;
+    animation-name: animBoutonPrint;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.btnImprimer:focus{
+    outline: none;
+}
+
+.btnImprimer:hover{
+    animation-play-state: paused;
+    transform: translateY(-5px) scale(1.05);
+}
+
+@media print{
+    .btnImprimer{
+        display: none;
+    }
+}
+
+/* En-tête */
+header .location{
+    margin: 10px 0;
+}
+
+header .contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .contact .lienIcone{
+    margin: 5px 0 10px 0;
+}
+
+header .contact .lienIcone i{
+    margin-right: 5px;
+    color: #A31621;
+}
+
+section{
+    margin-top: 25px;
+}
+
+section:first-child{
+    margin-top: 0;
+}
+
+/* Compétences */
+.listeCompetences{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    max-width: 80%;
+}
+
+@media print{
+    .listeCompetences{
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+}
+
+.listeCompetences>li{
+    color: white;
+    background-color: #A31621;
+    padding: 5px 8px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+.listeCompetences>li:before{
+    display: none;
+}
+
+/* Expérience */
+.work__item{
+    padding: 4px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media print{
+    .work__item{
+        /* padding: 8px 0; */
+    }
+}
+
+.work__item .poste{
+    font-weight: black;
+}
+
+.work__item__entete{
+    display: flex;
+    justify-content: space-between;
+}
+
+.work__item__entete .date{
+    width: 275px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.work__item__entete .date p{
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 8px;
+    text-align: right;
+}
+
+.work__item__poste{
+    text-transform: uppercase;
+}
+
+/* Éducation */
+.education__item__entete{
+    display: flex;
+    justify-content: space-between;
+}
+
+.education__item__entete .date{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.education__item__entete .date{
+    width: 165px;
+    height: 25px;
+    display: flex;
+    margin-left: 8px;
+    text-align: right;
+} 
+
+/* Langues */
+.langues__conteneur{
+    display: flex;
+}
+
+.langues__item{
+    margin-right: 55px;
+}
+
+
+/* Intérets */
+
+.interets__conteneur{
+    display: flex;
+}
+
+.interets__item{
+    margin-right: 55px;
+}
+
+@keyframes animBoutonPrint{
+    0% {
+        transform: translateY(0px);
+    }
+
+    10% {
+        transform: translateY(-5px);
+    }
+
+    20% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(0px);
+    }
+
+    35% {
+        transform: translateY(-5px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+}

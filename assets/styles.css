@@ -106,7 +106,6 @@ ul>li:before{
 
 .btnImprimer:hover{
     animation-play-state: paused;
-    transform: translateY(-5px) scale(1.05);
 }
 
 @media print{

@@ -87,7 +87,7 @@ ul>li:before{
 /* Bouton imprimer */
 .btnImprimer{
     border: 0;
-    background-color: none;
+    background-color: transparent;
     padding: 0;
     color: #A31621;
     position: fixed;

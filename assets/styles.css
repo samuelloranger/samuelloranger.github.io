@@ -225,9 +225,13 @@ section:first-child{
     width: 165px;
     height: 25px;
     display: flex;
-    margin-left: 8px;
+    justify-content: flex-end;
     text-align: right;
-} 
+}
+
+.education__item__entete .date p{
+    margin-left: 8px;
+}
 
 /* Langues */
 .langues__conteneur{
@@ -240,7 +244,6 @@ section:first-child{
 
 
 /* Intérets */
-
 .interets__conteneur{
     display: flex;
 }
@@ -249,6 +252,7 @@ section:first-child{
     margin-right: 55px;
 }
 
+/* Animations */
 @keyframes animBoutonPrint{
     0% {
         transform: translateY(0px);

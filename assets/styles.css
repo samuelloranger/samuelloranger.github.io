@@ -39,16 +39,32 @@ p, a{
 h1{
     font-size: 75px;
 }
+@media print{
+    h1{
+        font-size: 45px;
+    }
+}
 
 h2{
     font-size: 32px;
+}
+@media print{
+    h2{
+        font-size: 28px;
+    }
 }
 
 h3{
     font-size: 22px;
 }
+@media print{
+    h3{
+        font-size: 19px;
+        margin-bottom: 4px;
+    }
+}
 
-ul{
+ul {
     list-style-type: none;
     padding-left: 15px;
     margin: 0;
@@ -67,21 +83,6 @@ ul>li:before{
     height: 8px;
     background-color: #A31621;
     margin-right: 5px;
-}
-
-@media print{
-    h1{
-        font-size: 45px;
-    }
-
-    h2{
-        font-size: 28px;
-    }
-
-    h3{
-        font-size: 19px;
-        margin-bottom: 4px;
-    }
 }
 
 /* Bouton imprimer */
@@ -142,30 +143,36 @@ section:first-child{
 }
 
 /* Compétences */
-.listeCompetences{
+
+.competences__liste{
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
     max-width: 80%;
+    margin-bottom: 8px;
 }
 
 @media print{
-    .listeCompetences{
+    .competences__liste{
         max-width: 100%;
-        margin-bottom: 25px;
     }
 }
 
-.listeCompetences>li{
+.competences__liste>li{
     color: white;
     background-color: #A31621;
     padding: 5px 8px;
     margin-right: 3px;
-    margin-bottom: 3px;
 }
 
-.listeCompetences>li:before{
+@media print{
+    .competences__liste>li{
+        margin-bottom: 4px;
+    }
+}
+
+.competences__liste>li:before{
     display: none;
 }
 
@@ -173,12 +180,6 @@ section:first-child{
 .work__item{
     padding: 4px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-@media print{
-    .work__item{
-        /* padding: 8px 0; */
-    }
 }
 
 .work__item .poste{
@@ -210,18 +211,22 @@ section:first-child{
 }
 
 /* Éducation */
-.education__item__entete{
+.formation__item{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.formation__item__entete{
     display: flex;
     justify-content: space-between;
 }
 
-.education__item__entete .date{
+.formation__item__entete .date{
     width: 250px;
     display: flex;
     justify-content: space-between;
 }
 
-.education__item__entete .date{
+.formation__item__entete .date{
     width: 165px;
     height: 25px;
     display: flex;
@@ -229,7 +234,7 @@ section:first-child{
     text-align: right;
 }
 
-.education__item__entete .date p{
+.formation__item__entete .date p{
     margin-left: 8px;
 }
 

@@ -45,35 +45,31 @@
 
     <main>
         <section>
-            <section>
-                <div>
-                    <p>Étudiant en technique d’intégration multimédia, mes employeurs me qualifient de quelqu'un de travaillant, fiable, autonome et motivé. Je serais un atout dans votre équipe puisque j’ai soif d’apprendre et j’ai le sens du travail soigné.</p>
-                </div>
-            </section>
+            <p>Étudiant en techniques d’intégration multimédia, mes employeurs me qualifient de travaillant, fiable, autonome et motivé. Je serais un atout pour votre équipe puisque je cherche toujours à approfondir mes connaissances et j’ai le sens du travail soigné.</p>
         </section>
 
         <!-- Début compétences -->
         <section>
             <h2>Compétences</h2>
-            <div>
-                <h3>Intégrateur web</h3>
-
-                <div>
-                    <p>Technique d'Intégration Multimédia 6<sup>e</sup> session, Cégep de Sainte-Foy</p>
-                </div>
-
-                <ul class="listeCompetences">
+            <div class="listeCompetences">
+                <!-- Compétences technologies -->
+                <ul class="competences__liste">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>BEM</li>
                     <li>Bootstrap</li>
                     <li>JavaScript</li>
                     <li>TypeScript</li>
+                    <li>JSON</li>
                     <li>PHP</li>
                     <li>Wordpress</li>
                     <li>Git</li>
-                    <li>Illustrator</li>
+                </ul>
+
+                <!-- Compétences Logiciels -->
+                <ul class="competences__liste">
                     <li>Google Analytics</li>
+                    <li>Illustrator</li>
                     <li>Photoshop</li>
                     <li>Audition</li>
                     <li>Adobe Xd</li>
@@ -96,16 +92,13 @@
                         <p>—</p>
                         <p>Maintenant</p>
                     </div>
-
                 </div>
 
+                <p class="work__item__poste">Développeur Web</p>
+
                 <a target="_blank" href="https://rouillier.ca/">https://rouillier.ca/</a>
-                
-                <p class="work__item__poste">Intégrateur/Développeur Web</p>
 
                 <ul class="work__item__listeTaches">
-                    <li><p>Design</p></li>
-                    <li><p>Intégration/Programmation</p></li>
                     <li><p>Développement de sites avec Wordpress</p></li>
                     <li><p>Intégration d'articles de blogs</p></li>
                     <li><p>Montage audio pour le <a href="http://rouillier.ca/blog/podcast">Podcast Minier</a></p></li>
@@ -127,10 +120,8 @@
                 <a target="_blank" href="https://batteriesdesrecollets.ca/">https://batteriesdesrecollets.ca/</a></span>
                 
                 <ul class="work__item__listeTaches">
-                    <li><p>Design</p></li>
-                    <li><p>Intégration</p></li>
-                    <li><p>Développement du thême</p></li>
-                    <li><p>Création des formulaires</p></li>
+                    <li><p>Design des maquettes, intégration et développement du thême Wordpress</p></li>
+                    <li><p>Création des formulaires de l'interface administrateur</p></li>
                 </ul>
             </div>
 
@@ -150,9 +141,7 @@
                 <a target="_blank" href="https://www.transports.gouv.qc.ca/">https://www.transports.gouv.qc.ca/</a></span>
 
                 <ul class="work__item__listeTaches">
-                    <li><p>Intégrer les nouvelles Intranet et les communiqués sur le site Web</p></li>
-                    <li><p>Mettre à jour les pages du site Web et de l'Intranet</p></li>
-                    <li><p>Mettre à jour les documents</p></li>
+                    <li><p>Mettre à jour les documents et les pages du site Web et de l'Intranet</p></li>
                     <li><p>Gérer les demandes d'intégrations des édimestres</p></li>
                 </ul>
             </div>
@@ -171,10 +160,8 @@
                 <p class="work__item__poste">Conseiller aux ventes</p>
 
                 <ul class="work__item__listeTaches">
-                    <li><p>Répondre aux questions des clients</p></li>
-                    <li><p>Conseiller les clients sur les jeux</p></li>
-                    <li><p>Vendre des consoles, jeux, protections, accessoires et produits connexes</p></li>
-                    <li><p>Faire payer les clients</p></li>
+                    <li><p>Répondre aux questions et conseiller les clients</p></li>
+                    <li><p>Vendre des consoles, des jeux, des protections, des accessoires et produits connexes</p></li>
                 </ul>
             </div>
 
@@ -194,20 +181,18 @@
                 <a target="_blank" href="https://www.mcdonalds.ca/">https://www.mcdonalds.ca/</a></p>
 
                 <ul class="highlights">
-                    <li><p>Gérer des employés</p></li>
-                    <li><p>Gérer des horaires</p></li>
-                    <li><p>Faire des inventaires</p></li>
+                    <li><p>Gérer des employés, des horaires et de l'inventaire</p></li>
                     <li><p>Répondre aux plaintes de clients</p></li>
                 </ul>
             </div>
         </section>
 
-        <section class="education">
-            <h2>Éducation</h2>
+        <section class="formation">
+            <h2>Formations</h2>
 
             <h3>Collégial</h3>
-            <div class="education__item">
-                <div class="education__item__entete">
+            <div class="formation__item">
+                <div class="formation__item__entete">
                     <p>Cégep de Sainte-Foy</p>
 
                     <div class="date">
@@ -216,14 +201,14 @@
                         <p>Maintenant</p>
                     </div>
                 </div>
-                <ul class="education__item__cours">
-                    <li>Technique d'Intégration Multimédia</li>
+                <ul class="formation__item__cours">
+                    <li><p>Technique d'Intégration Multimédia</p></li>
                 </ul>
             </div>
 
             <h3>Secondaire</h3>
-            <div class="education__item">
-                <div class="education__item__entete">
+            <div class="formation__item">
+                <div class="formation__item__entete">
                     <p>École Secondaire Chavigny</p>
                     
                     <div class="date">
@@ -233,9 +218,9 @@
                     </div>
                 </div>
 
-                <ul class="education__item__cours">
-                    <li>Infocommunication</li>
-                    <li>Entrepreneuriat</li>
+                <ul class="formation__item__cours">
+                    <li><p>Infocommunication</p></li>
+                    <li><p>Entrepreneuriat</p></li>
                 </ul>
             </div>
         </section>
@@ -246,12 +231,12 @@
             <div class="langues__conteneur">
                 <div class="langues__item">
                     <h3>Français</h3>
-                    <p><em>Langue maternelle</em></p>
+                    <p>Langue maternelle</p>
                 </div>
 
                 <div class="langues__item">
                     <h3>Anglais</h3>
-                    <p><em>Langue secondaire</em></p>   
+                    <p>Langue secondaire</p>   
                 </div>
             </div>
         </section>
@@ -261,12 +246,12 @@
 
             <div class="interets__conteneur">
                 <div class="interets__item">
-                    <h3>Films/Séries</h3>
+                    <h3>Multimédia</h3>
                     <ul>
-                        <li>Star Wars</li>
                         <li>Marvel Cinematic Universe</li>
+                        <li>Star Wars</li>
                         <li>DC</li>
-                        <li>Netflix</li>
+                        <li>Jeux vidéos</li>
                     </ul>
                 </div>
 
@@ -275,6 +260,8 @@
                     <ul>
                         <li>Mécanique</li>
                         <li>Technologies</li>
+                        <li>Ski-Doo</li>
+                        <li>Quatre-roues</li>
                     </ul>
                 </div>
 
@@ -282,10 +269,9 @@
                     <h3>Sports</h3>
                     <ul>
                         <li>Planche à neige</li>
-                        <li>Ski-Doo</li>
-                        <li>Quatre-roues</li>
                     </ul>
                 </div>
+            
             </div>
         </section>
     </main>
